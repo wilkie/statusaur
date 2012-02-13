@@ -7,7 +7,7 @@ require "statusaur/version"
 
 module Statusaur
   def self.run
-    Shoes.app :width => 300, :height => 100 do
+    Shoes.app :title => "Statusaur", :width => 300, :height => 100 do
       para "HEY"
     end
   end
