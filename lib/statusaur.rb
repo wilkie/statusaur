@@ -11,7 +11,10 @@ module Statusaur
       para "HEY"
       button "Accounts" do
         window :title => "Accounts" do
-          para "Foo"
+          para "Username:"
+          @username = edit_line :width => 150 do
+            alert @username.text
+          end
         end
       end
     end
