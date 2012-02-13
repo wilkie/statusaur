@@ -5,8 +5,8 @@ require "statusaur/version"
 Gem::Specification.new do |s|
   s.name        = "statusaur"
   s.version     = Statusaur::VERSION
-  s.authors     = ["wilkie"]
-  s.email       = ["wilkie05@gmail.com"]
+  s.authors     = ["wilkie", "jackiekircher"]
+  s.email       = ["wilkie05@gmail.com", "kircher.jackie@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{TODO: Write a gem summary}
   s.description = %q{TODO: Write a gem description}
@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
+  s.add_development_dependency "rspec"
+
+  s.add_runtime_dependency "green_shoes"
 end
