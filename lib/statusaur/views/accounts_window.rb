@@ -20,7 +20,7 @@ module Statusaur
 
           para "Password: "
           
-          password = edit_line(:width => 150) do
+          password = edit_line(:width => 150, :secret => true) do
             password_change(password.text)
           end
         end
