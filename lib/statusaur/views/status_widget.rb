@@ -17,7 +17,9 @@ module Statusaur
 
         opts[:status] || "[ Error retrieving status ]"
 
-        para opts[:status]
+        stack do
+          para opts[:status], size: 10
+        end
       end
     end
   end
