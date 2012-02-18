@@ -22,4 +22,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec"
 
   s.add_runtime_dependency "green_shoes"
+  s.add_runtime_dependency "rsvg2"
 end

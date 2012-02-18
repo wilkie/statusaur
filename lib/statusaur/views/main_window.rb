@@ -1,4 +1,5 @@
 require 'statusaur/views/accounts_window'
+require 'statusaur/views/status_widget'
 
 module Statusaur
   class MainWindow
@@ -10,7 +11,10 @@ module Statusaur
           Statusaur::AccountsWindow.new(self).open
         end
 
-        para "Updates:"
+        para "Timeline:"
+
+        status_widget :image => "http://twimg0-a.akamaihd.net/profile_images/1806587733/wilkie_avatar_shrug_reasonably_small.png", 
+                      :status => "@zackweiner Great talk in PGH. But, are you sure Meriweather is an expletive? My Czech friends just look confused when I yell it at them..."
       end
     end
   end
