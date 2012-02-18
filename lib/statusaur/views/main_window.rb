@@ -15,6 +15,7 @@ module Statusaur
 
         status_widget :image => "http://twimg0-a.akamaihd.net/profile_images/1806587733/wilkie_avatar_shrug_reasonably_small.png", 
                       :status => "@zackweiner Great talk in PGH. But, are you sure Meriweather is an expletive? My Czech friends just look confused when I yell it at them..."
+
         status_widget :image => "http://twimg0-a.akamaihd.net/profile_images/1806587733/wilkie_avatar_shrug_reasonably_small.png", 
                       :status => "@ashedryden YOU DANCE LIKE THIS http://t.co/8wPyXwz3 /via @maryloulenhart"
       end

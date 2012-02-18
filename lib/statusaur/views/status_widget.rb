@@ -7,6 +7,8 @@ module Statusaur
       s = flow do
         extend Statusaur::StatusResponder
 
+        border peachpuff, :stroke_width => 2
+
         opts[:image] || "assets/default.png"
 
         avatar = image opts[:image], :width => 48, :height => 48
@@ -17,8 +19,8 @@ module Statusaur
 
         opts[:status] || "[ Error retrieving status ]"
 
-        stack do
-          para opts[:status], size: 10
+        status = stack :margin_left => 5, :margin_bottom => 3, :width => app.cslot.width-5-50-18 do
+          i = tagline span(opts[:status], :size => 10)
         end
       end
     end
